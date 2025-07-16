@@ -55,10 +55,10 @@
       
 // })
 ////////////////////rename file////////////////////////
-const fs=require("fs")
-fs.rename("ram.txt","lakhan.txt",(err)=>{
-if(err)throw err;
-console.log("file renamed");
+// const fs=require("fs")
+// fs.rename("ram.txt","lakhan.txt",(err)=>{
+// if(err)throw err;
+// console.log("file renamed");
 
-})
+// })
  
