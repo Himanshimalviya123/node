@@ -1,3 +1,4 @@
+// -------------------all code index.js--------------------------------------
 // const http=require("http")
 // http.createServer((req,res)=>{
 // res.write("<h1>welcome to cybrom</h1>");
@@ -6,7 +7,7 @@
 /////////////////////////////user define module //////////////////////////////////////////////////
 
 // const http=require("http")
-// const Data=require("./cybrom")
+// const Data=require("../cybrom")
 // http.createServer((req,res)=>{
 //       res.write("<h1>module</h1>");
 //       res.write( Data.Myname())
@@ -61,4 +62,41 @@
 // console.log("file renamed");
 
 // })
- 
+ ////////////////////(use uppercase)///////////////////////////////////////
+
+//  const http=require("http")
+//  const uc=require("uppercase");
+
+//  http.createServer((req,res)=>{
+//     res.write(uc("hello friends we are web developer from bhopal"))
+//     res.end();
+//  }).listen(5000);
+
+
+
+// ------------------------------------------project start-------------------------------------------
+const express=require("express")
+const app=express();
+app.get("/",(req,res)=>{
+    res.send("<h1>welcome to cybrom!!!!!!</h1>")
+})
+app.get("/home",(req,res)=>{
+    res.send("<h1>welcome to home page</h1>")
+})
+app.get("/about",(req,res)=>{
+    res.send("<h1>welcome to about page</h1>")
+})
+app.get("/service",(req,res)=>{
+    res.send("<h1>our service</h1>")
+})
+app.get("/photo",(req,res)=>{
+    res.send("<h1>our photo</h1>")
+})
+app.get("/contact",(req,res)=>{
+    res.send("<h1>welcome to contact page</h1>")
+})
+app.listen(8000,()=>{
+    console.log("server run on port 8000!");
+    
+});
+
