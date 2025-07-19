@@ -75,28 +75,36 @@
 
 
 // ------------------------------------------project start-------------------------------------------
-const express=require("express")
-const app=express();
-app.get("/",(req,res)=>{
-    res.send("<h1>welcome to cybrom!!!!!!</h1>")
-})
-app.get("/home",(req,res)=>{
-    res.send("<h1>welcome to home page</h1>")
-})
-app.get("/about",(req,res)=>{
-    res.send("<h1>welcome to about page</h1>")
-})
-app.get("/service",(req,res)=>{
-    res.send("<h1>our service</h1>")
-})
-app.get("/photo",(req,res)=>{
-    res.send("<h1>our photo</h1>")
-})
-app.get("/contact",(req,res)=>{
-    res.send("<h1>welcome to contact page</h1>")
-})
-app.listen(8000,()=>{
-    console.log("server run on port 8000!");
+// const express=require("express")
+// const app=express();
+// app.get("/",(req,res)=>{
+//     res.send("<h1>welcome to cybrom!!!!!!</h1>")
+// })
+// app.get("/home",(req,res)=>{
+//     res.send("<h1>welcome to home page</h1>")
+// })
+// app.get("/about",(req,res)=>{
+//     res.send("<h1>welcome to about page</h1>")
+// })
+// app.get("/service",(req,res)=>{
+//     res.send("<h1>our service</h1>")
+// })
+// app.get("/photo",(req,res)=>{
+//     res.send("<h1>our photo</h1>")
+// })
+// app.get("/contact",(req,res)=>{
+//     res.send("<h1>welcome to contact page</h1>")
+// })
+// app.listen(8000,()=>{
+//     console.log("server run on port 8000!");
     
-});
-
+// });
+// ------------------------------------route---------------------------------------
+const express=require("express")
+const Stu=require("./routes/sturoutes")
+const app=express();
+app.use("/student",Stu)
+app.listen(5000,()=>{
+    console.log("server run on the port 5000!!!");
+    
+})
