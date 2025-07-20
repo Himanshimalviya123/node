@@ -99,7 +99,7 @@
 //     console.log("server run on port 8000!");
     
 // });
-// ------------------------------------route---------------------------------------
+// ------------------------------------route (sturoutes.js)--------------------------------------
 const express=require("express")
 const Stu=require("./routes/sturoutes")
 const app=express();
