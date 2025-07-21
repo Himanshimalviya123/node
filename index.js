@@ -100,10 +100,22 @@
     
 // });
 // ------------------------------------route (sturoutes.js)--------------------------------------
+// const express=require("express")
+// const Stu=require("./routes/sturoutes")
+// const app=express();
+// app.use("/student",Stu)
+// app.listen(5000,()=>{
+//     console.log("server run on the port 5000!!!");
+    
+// })
+/////////////////////////////mvc////////////////////////////
 const express=require("express")
-const Stu=require("./routes/sturoutes")
 const app=express();
+const Stu=require("./routes/sturoutes")
+
+
 app.use("/student",Stu)
+
 app.listen(5000,()=>{
     console.log("server run on the port 5000!!!");
     
