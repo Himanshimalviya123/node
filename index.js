@@ -108,7 +108,7 @@
 //     console.log("server run on the port 5000!!!");
     
 // })
-/////////////////////////////mvc////////////////////////////
+/////////////////////////////mvc (stucontroller.js,sturoutes.js)////////////////////////////
 const express=require("express")
 const app=express();
 const Stu=require("./routes/sturoutes")
